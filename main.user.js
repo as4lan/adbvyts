@@ -137,7 +137,7 @@ function bringToFront(target_id) {
  
 function createIframe(newUrl) {
     let url = "";
-    const commonArgs = "autoplay=1&modestbranding=1";
+    const commonArgs = "modestbranding=1";
  
     const videoId = splitUrl(newUrl);
     if (!videoId) {
@@ -181,7 +181,7 @@ function removeIframe() {
 function setYtPlayerAttributes(player, url){
     // set all the necessary player attributes here
     player.setAttribute('src', url);
-    player.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+    player.setAttribute('allow', 'accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
     player.setAttribute('frameborder', '0');
     player.setAttribute('allowfullscreen', "allowfullscreen");
     player.setAttribute('mozallowfullscreen', "mozallowfullscreen");
